@@ -36,11 +36,17 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Muli&display=swap",
+    "/css/code-blocks-buttons.css"
+  ],
+
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'introduction/ups-overview', label: 'Documentation'},
     // {doc: 'doc4', label: 'API'},
     {href: 'https://github.com/aerogear/aerogear-unifiedpush-server', label: 'GitHub'},
+    {page: 'help', label: 'Help'},
     // {blog: true, label: 'Blog'},
   ],
 
@@ -77,11 +83,15 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: 'atom-one-dark',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+      'https://buttons.github.io/buttons.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    '/js/code-block-buttons.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
