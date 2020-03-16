@@ -48,7 +48,7 @@ class Index extends React.Component {
             image: `${baseUrl}img/Android_robot.svg`,
             imageAlign: 'top',
             imageLink: '/docs/clients/android-client',
-            title: '<a href="/docs/clients/android-client">Java Client SDK</a>',
+            title: '<a href="/docs/clients/android-client">Android Client SDK</a>',
           },
           {
             content: 'A Swift library that allows the integration of the UnifiedPush Server into your native iOS application',
